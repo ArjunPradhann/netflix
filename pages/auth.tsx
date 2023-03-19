@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Input from "./components/input";
+import Input from "../components/input";
 
 const Auth = () => {
     const [email, setEmail]= useState ('');
@@ -47,7 +47,7 @@ const Auth = () => {
                         value={password}
                         /> 
                     </div>
-                    <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red- 700 transition">
+                    <button className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
                             {variant === 'login'? 'Login': 'Sign up'}
                     </button>
                     <p className="text-neutral-500 mt-12">
